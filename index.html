@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+  const correctPassword = "myWSH123"; // change your password here
+
+  const userPassword = prompt("Enter password to access WSH Library:");
+  if (userPassword !== correctPassword) {
+    document.write("Access Denied");
+    throw new Error("Unauthorized");
+  }
+</script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WSH Resource Library</title>
